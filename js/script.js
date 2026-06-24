@@ -1,7 +1,7 @@
 // ========== script.js ==========
 
 (function() {
-  // Datos de productos con rutas de imagen - SOLO CAMISETAS Y PANTALONES
+  // Datos de productos con rutas de imagen
   const products = {
     camisetas: [
       { id: 'c1', name: 'Lakers Icon', price: '29.99', tag: 'Edicion', image: 'images/camiseta-lakers.jpg' },
@@ -18,6 +18,14 @@
       { id: 'p4', name: 'Tech Fleece', price: '44.00', tag: 'Termico', image: 'images/pantalon-fleece.jpg' },
       { id: 'p5', name: 'Classic Sweat', price: '28.99', tag: 'Basico', image: 'images/pantalon-sweat.jpg' },
       { id: 'p6', name: 'Parachute Pant', price: '47.00', tag: 'Baggy', image: 'images/pantalon-parachute.jpg' }
+    ],
+    sudaderas: [
+      { id: 's1', name: 'Hoodie MVP', price: '49.99', tag: 'Edicion', image: 'images/sudadera-hoodie.jpg' },
+      { id: 's2', name: 'Crew Neck', price: '39.99', tag: 'Clasico', image: 'images/sudadera-crew.jpg' },
+      { id: 's3', name: 'Oversized Logo', price: '54.00', tag: 'Oversized', image: 'images/sudadera-oversized.jpg' },
+      { id: 's4', name: 'Zip-Up Court', price: '59.99', tag: 'Cremallera', image: 'images/sudadera-zip.jpg' },
+      { id: 's5', name: 'Retro Half-Zip', price: '44.50', tag: 'Vintage', image: 'images/sudadera-halfzip.jpg' },
+      { id: 's6', name: 'Hoodie All-Star', price: '62.00', tag: 'All-Star', image: 'images/sudadera-allstar.jpg' }
     ]
   };
 
@@ -32,6 +40,9 @@
   } else if (page === 'pantalones.html') {
     gridId = 'pantalones-grid';
     categoryKey = 'pantalones';
+  } else if (page === 'sudaderas.html') {
+    gridId = 'sudaderas-grid';
+    categoryKey = 'sudaderas';
   }
 
   // Si estamos en una página de categoría, renderizar los productos
