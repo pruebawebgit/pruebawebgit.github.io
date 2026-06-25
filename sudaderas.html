@@ -3,29 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Sudaderas Basketball · Hoops & Threads</title>
+  <title>Sudaderas Basketball NBA · Hoops &amp; Threads</title>
 
-  <!-- SEO básico -->
-  <meta name="description" content="Sudaderas de basketball de estilo NBA. 6 modelos disponibles en Hoops & Threads. Envíos a toda España.">
+  <!-- SEO -->
+  <meta name="description" content="Sudaderas de basketball estilo NBA: Bulls, Lakers, Celtics, Warriors, Heat y Nets. 6 modelos disponibles en Hoops &amp; Threads. Envíos a toda España.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://libardorestrepo.com/sudaderas.html" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Sudaderas Basketball · Hoops & Threads" />
-  <meta property="og:description" content="Sudaderas de basketball estilo NBA. Descubre los 6 modelos disponibles en Hoops & Threads." />
+  <meta property="og:title" content="Sudaderas Basketball NBA · Hoops &amp; Threads" />
+  <meta property="og:description" content="6 sudaderas de basketball estilo NBA. Envíos a toda España." />
   <meta property="og:url" content="https://libardorestrepo.com/sudaderas.html" />
   <meta property="og:type" content="website" />
 
-  <!-- Schema.org -->
+  <!-- Schema.org ItemList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
+    "@type": "ItemList",
     "name": "Sudaderas Basketball",
-    "description": "Catálogo de sudaderas de basketball",
     "url": "https://libardorestrepo.com/sudaderas.html",
-    "isPartOf": { "@type": "WebSite", "name": "Hoops & Threads", "url": "https://libardorestrepo.com" }
+    "numberOfItems": 6,
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Bulls Roar Hoodie", "url": "https://libardorestrepo.com/sudaderas.html#s1" },
+      { "@type": "ListItem", "position": 2, "name": "Lakers Icon Hoodie", "url": "https://libardorestrepo.com/sudaderas.html#s2" },
+      { "@type": "ListItem", "position": 3, "name": "Celtics Green Hoodie", "url": "https://libardorestrepo.com/sudaderas.html#s3" },
+      { "@type": "ListItem", "position": 4, "name": "Warriors Gold Hoodie", "url": "https://libardorestrepo.com/sudaderas.html#s4" },
+      { "@type": "ListItem", "position": 5, "name": "Heat Vice Hoodie", "url": "https://libardorestrepo.com/sudaderas.html#s5" },
+      { "@type": "ListItem", "position": 6, "name": "Nets Blackout Hoodie", "url": "https://libardorestrepo.com/sudaderas.html#s6" }
+    ]
   }
   </script>
 
@@ -33,11 +39,10 @@
 </head>
 <body>
 
-  <!-- Barra de navegación superior -->
   <nav class="navbar">
     <div class="nav-container">
       <div class="nav-logo">
-        <a href="index.html">Hoops & Threads</a>
+        <a href="index.html">Hoops &amp; Threads</a>
       </div>
       <ul class="nav-menu">
         <li><a href="index.html" class="nav-link">Inicio</a></li>
@@ -52,21 +57,143 @@
     </div>
   </nav>
 
-  <!-- Contenido principal -->
   <main class="main-content">
     <div class="container">
+
       <div class="section-header">
-        <h2>Sudaderas</h2>
+        <h1>Sudaderas Basketball</h1>
         <span class="product-count">6 productos</span>
       </div>
-      <div class="product-grid" id="sudaderas-grid"></div>
+
+      <div class="product-grid" id="sudaderas-grid">
+
+        <!-- S1: Bulls Roar Hoodie -->
+        <article class="product-card" id="s1" itemscope itemtype="https://schema.org/Product">
+          <img src="images/sudadera-allstar.jpg"
+               alt="Sudadera Bulls Roar Hoodie retro estilo NBA color rojo y negro"
+               onerror="this.src='images/placeholder.jpg'"
+               itemprop="image">
+          <div class="product-info">
+            <span class="product-badge">Retro</span>
+            <h2 class="product-name" itemprop="name">Bulls Roar Hoodie</h2>
+            <p class="product-description" itemprop="description">Sudadera con capucha inspirada en los Chicago Bulls retro. Rojo y negro con bordado frontal.</p>
+            <p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="price" content="39.99">€39,99</span>
+              <meta itemprop="priceCurrency" content="EUR">
+            </p>
+            <button class="btn-cart" data-id="s1" data-name="Bulls Roar Hoodie" data-price="39.99">
+              Añadir al carrito
+            </button>
+          </div>
+        </article>
+
+        <!-- S2: Lakers Icon Hoodie -->
+        <article class="product-card" id="s2" itemscope itemtype="https://schema.org/Product">
+          <img src="images/sudadera-crew.jpg"
+               alt="Sudadera Lakers Icon Hoodie edición especial color morado y dorado"
+               onerror="this.src='images/placeholder.jpg'"
+               itemprop="image">
+          <div class="product-info">
+            <span class="product-badge">Edición</span>
+            <h2 class="product-name" itemprop="name">Lakers Icon Hoodie</h2>
+            <p class="product-description" itemprop="description">Sudadera edición especial de los Lakers en morado y dorado. Logo bordado en pecho y capucha forrada.</p>
+            <p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="price" content="42.99">€42,99</span>
+              <meta itemprop="priceCurrency" content="EUR">
+            </p>
+            <button class="btn-cart" data-id="s2" data-name="Lakers Icon Hoodie" data-price="42.99">
+              Añadir al carrito
+            </button>
+          </div>
+        </article>
+
+        <!-- S3: Celtics Green Hoodie -->
+        <article class="product-card" id="s3" itemscope itemtype="https://schema.org/Product">
+          <img src="images/sudadera-halfzip.jpg"
+               alt="Sudadera Celtics Green Hoodie clásica color verde Boston"
+               onerror="this.src='images/placeholder.jpg'"
+               itemprop="image">
+          <div class="product-info">
+            <span class="product-badge">Clásico</span>
+            <h2 class="product-name" itemprop="name">Celtics Green Hoodie</h2>
+            <p class="product-description" itemprop="description">Sudadera clásica de los Boston Celtics en verde trébol con escudo bordado en el pecho.</p>
+            <p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="price" content="37.99">€37,99</span>
+              <meta itemprop="priceCurrency" content="EUR">
+            </p>
+            <button class="btn-cart" data-id="s3" data-name="Celtics Green Hoodie" data-price="37.99">
+              Añadir al carrito
+            </button>
+          </div>
+        </article>
+
+        <!-- S4: Warriors Gold Hoodie -->
+        <article class="product-card" id="s4" itemscope itemtype="https://schema.org/Product">
+          <img src="images/sudadera-hoodie.jpg"
+               alt="Sudadera Warriors Gold Hoodie Statement Edition azul y dorado"
+               onerror="this.src='images/placeholder.jpg'"
+               itemprop="image">
+          <div class="product-info">
+            <span class="product-badge">Statement</span>
+            <h2 class="product-name" itemprop="name">Warriors Gold Hoodie</h2>
+            <p class="product-description" itemprop="description">Sudadera Statement Edition de los Golden State Warriors. Azul royal con detalles dorados en mangas y bolsillo.</p>
+            <p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="price" content="41.00">€41,00</span>
+              <meta itemprop="priceCurrency" content="EUR">
+            </p>
+            <button class="btn-cart" data-id="s4" data-name="Warriors Gold Hoodie" data-price="41.00">
+              Añadir al carrito
+            </button>
+          </div>
+        </article>
+
+        <!-- S5: Heat Vice Hoodie -->
+        <article class="product-card" id="s5" itemscope itemtype="https://schema.org/Product">
+          <img src="images/sudadera-oversized.jpg"
+               alt="Sudadera Heat Vice Hoodie alternativa color rosa y negro Miami"
+               onerror="this.src='images/placeholder.jpg'"
+               itemprop="image">
+          <div class="product-info">
+            <span class="product-badge">Alternativa</span>
+            <h2 class="product-name" itemprop="name">Heat Vice Hoodie</h2>
+            <p class="product-description" itemprop="description">Sudadera Vice del Miami Heat en rosa pastel y negro. La más llamativa de la colección.</p>
+            <p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="price" content="44.99">€44,99</span>
+              <meta itemprop="priceCurrency" content="EUR">
+            </p>
+            <button class="btn-cart" data-id="s5" data-name="Heat Vice Hoodie" data-price="44.99">
+              Añadir al carrito
+            </button>
+          </div>
+        </article>
+
+        <!-- S6: Nets Blackout Hoodie -->
+        <article class="product-card" id="s6" itemscope itemtype="https://schema.org/Product">
+          <img src="images/sudadera-zip.jpg"
+               alt="Sudadera Nets Blackout Hoodie City Edition totalmente negra urbana"
+               onerror="this.src='images/placeholder.jpg'"
+               itemprop="image">
+          <div class="product-info">
+            <span class="product-badge">City</span>
+            <h2 class="product-name" itemprop="name">Nets Blackout Hoodie</h2>
+            <p class="product-description" itemprop="description">Sudadera City Edition de los Brooklyn Nets en negro total. Diseño minimalista urbano para llevar fuera de la cancha.</p>
+            <p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="price" content="38.50">€38,50</span>
+              <meta itemprop="priceCurrency" content="EUR">
+            </p>
+            <button class="btn-cart" data-id="s6" data-name="Nets Blackout Hoodie" data-price="38.50">
+              Añadir al carrito
+            </button>
+          </div>
+        </article>
+
+      </div><!-- /#sudaderas-grid -->
     </div>
   </main>
 
-  <!-- Footer -->
   <footer class="store-footer">
     <div class="container">
-      <span>Hoops & Threads · Basketball Store</span>
+      <span>Hoops &amp; Threads · Basketball Store</span>
       <span>2026 · Todos los derechos reservados</span>
     </div>
   </footer>

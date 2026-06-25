@@ -3,29 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Pantalones Basketball · Hoops & Threads</title>
+  <title>Pantalones Basketball NBA · Hoops &amp; Threads</title>
 
-  <!-- SEO básico -->
-  <meta name="description" content="Pantalones de basketball: shorts, joggers, cargo y más. 6 modelos desde €22.99 en Hoops & Threads.">
+  <!-- SEO -->
+  <meta name="description" content="Pantalones de basketball: Shorts Swingman, Jogger Court, Cargo Hoops, Tech Fleece, Classic Sweat y Parachute Pant. 6 modelos en Hoops &amp; Threads. Envíos a toda España.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://libardorestrepo.com/pantalones.html" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Pantalones Basketball · Hoops & Threads" />
-  <meta property="og:description" content="Pantalones de basketball: Swingman, Jogger, Cargo, Tech Fleece y más desde €22.99." />
+  <meta property="og:title" content="Pantalones Basketball · Hoops &amp; Threads" />
+  <meta property="og:description" content="6 modelos de pantalones de basketball disponibles. Envíos a toda España." />
   <meta property="og:url" content="https://libardorestrepo.com/pantalones.html" />
   <meta property="og:type" content="website" />
 
-  <!-- Schema.org -->
+  <!-- Schema.org ItemList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
+    "@type": "ItemList",
     "name": "Pantalones Basketball",
-    "description": "Catálogo de pantalones de basketball",
     "url": "https://libardorestrepo.com/pantalones.html",
-    "isPartOf": { "@type": "WebSite", "name": "Hoops & Threads", "url": "https://libardorestrepo.com" }
+    "numberOfItems": 6,
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Shorts Swingman", "url": "https://libardorestrepo.com/pantalones.html#p1" },
+      { "@type": "ListItem", "position": 2, "name": "Jogger Court", "url": "https://libardorestrepo.com/pantalones.html#p2" },
+      { "@type": "ListItem", "position": 3, "name": "Cargo Hoops", "url": "https://libardorestrepo.com/pantalones.html#p3" },
+      { "@type": "ListItem", "position": 4, "name": "Tech Fleece", "url": "https://libardorestrepo.com/pantalones.html#p4" },
+      { "@type": "ListItem", "position": 5, "name": "Classic Sweat", "url": "https://libardorestrepo.com/pantalones.html#p5" },
+      { "@type": "ListItem", "position": 6, "name": "Parachute Pant", "url": "https://libardorestrepo.com/pantalones.html#p6" }
+    ]
   }
   </script>
 
@@ -33,11 +39,10 @@
 </head>
 <body>
 
-  <!-- Barra de navegación superior -->
   <nav class="navbar">
     <div class="nav-container">
       <div class="nav-logo">
-        <a href="index.html">Hoops & Threads</a>
+        <a href="index.html">Hoops &amp; Threads</a>
       </div>
       <ul class="nav-menu">
         <li><a href="index.html" class="nav-link">Inicio</a></li>
@@ -52,21 +57,143 @@
     </div>
   </nav>
 
-  <!-- Contenido principal -->
   <main class="main-content">
     <div class="container">
+
       <div class="section-header">
-        <h2>Pantalones</h2>
+        <h1>Pantalones Basketball</h1>
         <span class="product-count">6 productos</span>
       </div>
-      <div class="product-grid" id="pantalones-grid"></div>
+
+      <div class="product-grid" id="pantalones-grid">
+
+        <!-- P1: Shorts Swingman -->
+        <article class="product-card" id="p1" itemscope itemtype="https://schema.org/Product">
+          <img src="images/pantalon-shorts.jpg"
+               alt="Shorts Swingman basketball ajuste perfecto estilo NBA"
+               onerror="this.src='images/placeholder.jpg'"
+               itemprop="image">
+          <div class="product-info">
+            <span class="product-badge">Ajuste</span>
+            <h2 class="product-name" itemprop="name">Shorts Swingman</h2>
+            <p class="product-description" itemprop="description">Shorts Swingman de perfecto ajuste, ideales para pista o calle. Tejido ligero y transpirable.</p>
+            <p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="price" content="22.99">€22,99</span>
+              <meta itemprop="priceCurrency" content="EUR">
+            </p>
+            <button class="btn-cart" data-id="p1" data-name="Shorts Swingman" data-price="22.99">
+              Añadir al carrito
+            </button>
+          </div>
+        </article>
+
+        <!-- P2: Jogger Court -->
+        <article class="product-card" id="p2" itemscope itemtype="https://schema.org/Product">
+          <img src="images/pantalon-jogger.jpg"
+               alt="Jogger Court pantalón de basketball performance para entrenamiento"
+               onerror="this.src='images/placeholder.jpg'"
+               itemprop="image">
+          <div class="product-info">
+            <span class="product-badge">Performance</span>
+            <h2 class="product-name" itemprop="name">Jogger Court</h2>
+            <p class="product-description" itemprop="description">Jogger de alto rendimiento para entrenamiento y partido. Corte ajustado en tobillo con tecnología performance.</p>
+            <p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="price" content="34.50">€34,50</span>
+              <meta itemprop="priceCurrency" content="EUR">
+            </p>
+            <button class="btn-cart" data-id="p2" data-name="Jogger Court" data-price="34.50">
+              Añadir al carrito
+            </button>
+          </div>
+        </article>
+
+        <!-- P3: Cargo Hoops -->
+        <article class="product-card" id="p3" itemscope itemtype="https://schema.org/Product">
+          <img src="images/pantalon-cargo.jpg"
+               alt="Cargo Hoops pantalón cargo basketball estilo streetwear"
+               onerror="this.src='images/placeholder.jpg'"
+               itemprop="image">
+          <div class="product-info">
+            <span class="product-badge">Cargo</span>
+            <h2 class="product-name" itemprop="name">Cargo Hoops</h2>
+            <p class="product-description" itemprop="description">Pantalón cargo con bolsillos laterales para el jugador con estilo streetwear fuera de la pista.</p>
+            <p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="price" content="39.99">€39,99</span>
+              <meta itemprop="priceCurrency" content="EUR">
+            </p>
+            <button class="btn-cart" data-id="p3" data-name="Cargo Hoops" data-price="39.99">
+              Añadir al carrito
+            </button>
+          </div>
+        </article>
+
+        <!-- P4: Tech Fleece -->
+        <article class="product-card" id="p4" itemscope itemtype="https://schema.org/Product">
+          <img src="images/pantalon-fleece.jpg"
+               alt="Tech Fleece pantalón térmico basketball para calentamiento"
+               onerror="this.src='images/placeholder.jpg'"
+               itemprop="image">
+          <div class="product-info">
+            <span class="product-badge">Térmico</span>
+            <h2 class="product-name" itemprop="name">Tech Fleece</h2>
+            <p class="product-description" itemprop="description">Pantalón térmico de calentamiento con tejido fleece técnico. Ideal para días fríos antes y después del partido.</p>
+            <p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="price" content="44.00">€44,00</span>
+              <meta itemprop="priceCurrency" content="EUR">
+            </p>
+            <button class="btn-cart" data-id="p4" data-name="Tech Fleece" data-price="44.00">
+              Añadir al carrito
+            </button>
+          </div>
+        </article>
+
+        <!-- P5: Classic Sweat -->
+        <article class="product-card" id="p5" itemscope itemtype="https://schema.org/Product">
+          <img src="images/pantalon-sweat.jpg"
+               alt="Classic Sweat pantalón básico basketball algodón cómodo"
+               onerror="this.src='images/placeholder.jpg'"
+               itemprop="image">
+          <div class="product-info">
+            <span class="product-badge">Básico</span>
+            <h2 class="product-name" itemprop="name">Classic Sweat</h2>
+            <p class="product-description" itemprop="description">Pantalón clásico de algodón suave. El básico que no puede faltar en ningún armario hooper.</p>
+            <p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="price" content="28.99">€28,99</span>
+              <meta itemprop="priceCurrency" content="EUR">
+            </p>
+            <button class="btn-cart" data-id="p5" data-name="Classic Sweat" data-price="28.99">
+              Añadir al carrito
+            </button>
+          </div>
+        </article>
+
+        <!-- P6: Parachute Pant -->
+        <article class="product-card" id="p6" itemscope itemtype="https://schema.org/Product">
+          <img src="images/pantalon-parachute.jpg"
+               alt="Parachute Pant pantalón baggy basketball tendencia streetwear"
+               onerror="this.src='images/placeholder.jpg'"
+               itemprop="image">
+          <div class="product-info">
+            <span class="product-badge">Baggy</span>
+            <h2 class="product-name" itemprop="name">Parachute Pant</h2>
+            <p class="product-description" itemprop="description">Pantalón baggy estilo parachute, tendencia absoluta en streetwear basketball. Corte oversized con tejido técnico.</p>
+            <p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="price" content="47.00">€47,00</span>
+              <meta itemprop="priceCurrency" content="EUR">
+            </p>
+            <button class="btn-cart" data-id="p6" data-name="Parachute Pant" data-price="47.00">
+              Añadir al carrito
+            </button>
+          </div>
+        </article>
+
+      </div><!-- /#pantalones-grid -->
     </div>
   </main>
 
-  <!-- Footer -->
   <footer class="store-footer">
     <div class="container">
-      <span>Hoops & Threads · Basketball Store</span>
+      <span>Hoops &amp; Threads · Basketball Store</span>
       <span>2026 · Todos los derechos reservados</span>
     </div>
   </footer>
